@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_invntro"
+            android:icon="@drawable/inventario"
+            android:title="@string/menu_invntrio" />
+        <item
+            android:id="@+id/nav_cmpra"
+            android:icon="@drawable/bolsacompra"
+            android:title="@string/menu_cmpra" />
+        <item
+            android:id="@+id/nav_vnta"
+            android:icon="@drawable/calculadora"
+            android:title="@string/menu_vnta" />
+        <item
+            android:id="@+id/nav_ingrso"
+            android:icon="@drawable/dinero"
+            android:title="@string/menu_ingrso" />
+        <item
+            android:id="@+id/nav_gsto"
+            android:icon="@drawable/venta"
+            android:title="@string/menu_gsto" />
+        <item
+            android:id="@+id/nav_clnte"
+            android:icon="@drawable/cliente"
+            android:title="@string/menu_clnte" />
+        <item
+            android:id="@+id/nav_prvdor"
+            android:icon="@drawable/distribucion"
+            android:title="@string/menu_prvdor" />
+        <item
+            android:id="@+id/nav_rprte"
+            android:icon="@drawable/analisis"
+            android:title="@string/menu_rprte" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+    <item android:title="Cerrar sesion">
+        <menu>
+            <item
+                android:id="@+id/nav_slir"
+                android:icon="@drawable/salir"
+                android:title="@string/menu_slir" />
+        </menu>
+    </item>
+</menu>
