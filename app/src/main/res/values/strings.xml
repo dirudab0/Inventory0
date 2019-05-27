@@ -19,8 +19,7 @@
     <string name="nav_header_subtitle">inventory@inventory.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="dummy_buttonfnal">Fin Presentación</string>
-    <string name="dummy_contentfnal">Finalizando INVENTORY</string>
+
 
     <string name="menu_invntrio">Inventario</string>
     <string name="menu_vnta">Ventas</string>
@@ -35,4 +34,6 @@
     <string name="menu_slir">Salir</string>
 
     <string name="title_activity_final">FinalActivity</string>
+    <string name="dummy_buttonfnal">Fin Presentación</string>
+    <string name="dummy_contentfnal">Finalizando INVENTORY</string>
 </resources>

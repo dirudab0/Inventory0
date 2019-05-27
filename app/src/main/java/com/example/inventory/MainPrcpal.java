@@ -114,4 +114,8 @@ public class MainPrcpal extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    public void open_invntro(View view){
+        Intent intent=new Intent(this, InvntroActivity.class);
+        startActivity(intent);
+    }
 }
