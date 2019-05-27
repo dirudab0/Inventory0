@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="17dp"
-        android:contentDescription="Imagen inventario"
+        android:contentDescription="@string/img_invntro_desc"
         android:onClick="open_invntro"
         app:layout_constraintBottom_toTopOf="@+id/txt_vntas"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +45,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="20dp"
-
-        android:contentDescription="Imagen Compras"
+        android:contentDescription="@string/img_cmpras_desc"
         app:layout_constraintBottom_toTopOf="@+id/txt_ingrsos"
         app:layout_constraintEnd_toStartOf="@+id/img_vnta"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,8 +72,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="20dp"
-
-        android:contentDescription="Imagen Ventas"
+        android:contentDescription="@string/img_vntas_desc"
         app:layout_constraintBottom_toTopOf="@+id/txt_gstos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_cmpra"
@@ -100,8 +98,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="16dp"
-
-        android:contentDescription="Imagen Ingresos"
+        android:contentDescription="@string/img_ingrsos_desc"
         app:layout_constraintBottom_toTopOf="@+id/txt_clntes"
         app:layout_constraintEnd_toStartOf="@+id/img_gsto"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,8 +124,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="17dp"
-
-        android:contentDescription="Imagen Gastos"
+        android:contentDescription="@string/img_gtos_desc"
         app:layout_constraintBottom_toTopOf="@+id/txt_prvdres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_Ingrso"
@@ -154,8 +150,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="146dp"
-
-        android:contentDescription="Imagen Clientes"
+        android:contentDescription="@string/img_clntes_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_prvdres"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,8 +174,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="20dp"
-
-        android:contentDescription="Imagen Proveedores"
+        android:contentDescription="@string/img_prvdres_desc"
         app:layout_constraintBottom_toTopOf="@+id/txt_rprtes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_clnte"
@@ -206,8 +200,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-
-        android:contentDescription="Imagen Reportes"
+        android:contentDescription="@string/img_rprtes_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

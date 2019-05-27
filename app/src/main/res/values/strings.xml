@@ -28,6 +28,16 @@
     <string name="txt_prvdres">Proveedores</string>
     <string name="txt_rprtes">Proveedores</string>
 
+    <string name="img_invntro_desc">Inventario</string>
+    <string name="img_cmpras_desc">Compras</string>
+    <string name="img_vntas_desc">Ventas</string>
+    <string name="img_ingrsos_desc">Ingresos</string>
+    <string name="img_gtos_desc">Gastos</string>
+    <string name="img_clntes_desc">Clientes</string>
+    <string name="img_prvdres_desc">Proveedores</string>
+    <string name="img_rprtes_desc">Proveedores</string>
+
+
 
     <string name="menu_invntrio">Inventario</string>
     <string name="menu_vnta">Ventas</string>
