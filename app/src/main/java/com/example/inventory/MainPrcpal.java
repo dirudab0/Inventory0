@@ -99,6 +99,10 @@ public class MainPrcpal extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.nav_slir) {
+            //Intent intent = new Intent (this, FinalActivity.class);
+            //startActivity(intent);
+            Intent intent = new Intent (this, FinalActivity.class);
+            startActivity(intent);
             finish();
             //Intent intent=new Intent(Intent.ACTION_MAIN);
             //intent.addCategory(Intent.CATEGORY_HOME);
