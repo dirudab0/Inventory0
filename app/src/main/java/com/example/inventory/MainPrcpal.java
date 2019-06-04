@@ -8,12 +8,15 @@ import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -21,10 +24,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainPrcpal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    EditText etCodigo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +51,8 @@ public class MainPrcpal extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        etCodigo = findViewById(R.id.editText);
     }
 
     @Override
@@ -118,4 +125,19 @@ public class MainPrcpal extends AppCompatActivity
         Intent intent=new Intent(this, InvntroActivity.class);
         startActivity(intent);
     }
+    public void open_prdcto(View view){
+        Intent intent=new Intent(this, MainPrdcto.class);
+        startActivity(intent);
+    }
+
+
+
+    /**
+     * Dispatch incoming result to the correct fragment.
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+
 }

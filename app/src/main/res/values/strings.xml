@@ -22,7 +22,7 @@
     <string name="txt_invntro">Inventario</string>
     <string name="txt_cmpras">Compras</string>
     <string name="txt_vntas">Ventas</string>
-    <string name="txt_ingrsos">Ingresos</string>
+    <string name="txt_ingrsos">Ingreso Productos</string>
     <string name="txt_gtos">Gastos</string>
     <string name="txt_clntes">Clientes</string>
     <string name="txt_prvdres">Proveedores</string>
@@ -36,7 +36,6 @@
     <string name="img_clntes_desc">Clientes</string>
     <string name="img_prvdres_desc">Proveedores</string>
     <string name="img_rprtes_desc">Proveedores</string>
-
 
 
     <string name="menu_invntrio">Inventario</string>
@@ -54,4 +53,7 @@
     <string name="title_activity_final">FinalActivity</string>
     <string name="dummy_buttonfnal">Fin Presentación</string>
     <string name="dummy_contentfnal">Finalizando INVENTORY</string>
+    <string name="title_activity_main_prdcto">MainPrdcto</string>
+
+
 </resources>

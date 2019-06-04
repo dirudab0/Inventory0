@@ -99,6 +99,7 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/img_ingrsos_desc"
+        android:onClick="open_prdcto"
         app:layout_constraintBottom_toTopOf="@+id/txt_clntes"
         app:layout_constraintEnd_toStartOf="@+id/img_gsto"
         app:layout_constraintStart_toStartOf="parent"
