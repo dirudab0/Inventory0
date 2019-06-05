@@ -13,12 +13,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="76dp"
         android:contentDescription="@string/img_invntro_desc"
         android:onClick="open_invntro"
-        app:layout_constraintBottom_toTopOf="@+id/txt_vntas"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_prvdres"
+        app:layout_constraintEnd_toStartOf="@+id/img_cmpra"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_invntro"
         app:srcCompat="@drawable/logoinventory" />
@@ -26,15 +26,14 @@
     <TextView
         android:id="@+id/txt_invntro"
         android:layout_width="0dp"
-        android:layout_height="20dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="113dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="3dp"
         android:gravity="center"
         android:text="@string/txt_invntro"
-        app:layout_constraintBottom_toTopOf="@+id/txt_cmpras"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_Invntro"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cmpras"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,183 +41,79 @@
         android:id="@+id/img_cmpra"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="76dp"
         android:contentDescription="@string/img_cmpras_desc"
-        app:layout_constraintBottom_toTopOf="@+id/txt_ingrsos"
-        app:layout_constraintEnd_toStartOf="@+id/img_vnta"
-        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="open_prdcto"
+        app:layout_constraintBottom_toTopOf="@+id/txt_clntes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_Invntro"
         app:layout_constraintTop_toBottomOf="@+id/txt_cmpras"
         app:srcCompat="@drawable/prcpalcompras" />
 
     <TextView
         android:id="@+id/txt_cmpras"
         android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="12dp"
         android:gravity="center"
         android:text="@string/txt_cmpras"
         app:layout_constraintBottom_toTopOf="@+id/img_cmpra"
-        app:layout_constraintEnd_toStartOf="@+id/txt_vntas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_invntro" />
-
-    <ImageView
-        android:id="@+id/img_vnta"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="20dp"
-        android:contentDescription="@string/img_vntas_desc"
-        app:layout_constraintBottom_toTopOf="@+id/txt_gstos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img_cmpra"
-        app:layout_constraintTop_toBottomOf="@+id/txt_vntas"
-        app:srcCompat="@drawable/prcpalventas" />
-
-    <TextView
-        android:id="@+id/txt_vntas"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="7dp"
-        android:gravity="center"
-        android:text="@string/txt_vntas"
-        app:layout_constraintBottom_toTopOf="@+id/img_vnta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_cmpras"
-        app:layout_constraintTop_toBottomOf="@+id/img_Invntro" />
-
-    <ImageView
-        android:id="@+id/img_Ingrso"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/img_ingrsos_desc"
-        android:onClick="open_prdcto"
-        app:layout_constraintBottom_toTopOf="@+id/txt_clntes"
-        app:layout_constraintEnd_toStartOf="@+id/img_gsto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingrsos"
-        app:srcCompat="@drawable/prcpalingresos" />
-
-    <TextView
-        android:id="@+id/txt_ingrsos"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="9dp"
-        android:gravity="center"
-        android:text="@string/txt_ingrsos"
-        app:layout_constraintBottom_toTopOf="@+id/img_Ingrso"
-        app:layout_constraintEnd_toStartOf="@+id/txt_gstos"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_cmpra" />
-
-    <ImageView
-        android:id="@+id/img_gsto"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="17dp"
-        android:contentDescription="@string/img_gtos_desc"
-        app:layout_constraintBottom_toTopOf="@+id/txt_prvdres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img_Ingrso"
-        app:layout_constraintTop_toBottomOf="@+id/txt_gstos"
-        app:srcCompat="@drawable/prcpalgastos" />
-
-    <TextView
-        android:id="@+id/txt_gstos"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="7dp"
-        android:gravity="center"
-        android:text="@string/txt_gtos"
-        app:layout_constraintBottom_toTopOf="@+id/img_gsto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_ingrsos"
-        app:layout_constraintTop_toBottomOf="@+id/img_vnta" />
+        app:layout_constraintStart_toEndOf="@+id/txt_invntro"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/img_clnte"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="146dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="215dp"
         android:contentDescription="@string/img_clntes_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img_prvdres"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_clntes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_prvdres"
         app:srcCompat="@drawable/prcpalclientes" />
 
     <TextView
         android:id="@+id/txt_clntes"
         android:layout_width="0dp"
-        android:layout_height="20dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="12dp"
         android:gravity="center"
         android:text="@string/txt_clntes"
-        app:layout_constraintBottom_toTopOf="@+id/img_clnte"
-        app:layout_constraintEnd_toEndOf="@+id/img_clnte"
-        app:layout_constraintStart_toStartOf="@+id/img_clnte"
-        app:layout_constraintTop_toBottomOf="@+id/img_Ingrso" />
+        app:layout_constraintBottom_toTopOf="@+id/img_prvdres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_prvdres"
+        app:layout_constraintTop_toBottomOf="@+id/img_cmpra" />
 
     <ImageView
         android:id="@+id/img_prvdres"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="215dp"
         android:contentDescription="@string/img_prvdres_desc"
-        app:layout_constraintBottom_toTopOf="@+id/txt_rprtes"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/img_clnte"
-        app:layout_constraintTop_toBottomOf="@+id/txt_prvdres"
+        app:layout_constraintTop_toBottomOf="@+id/txt_clntes"
         app:srcCompat="@drawable/prcpalproveedores" />
 
     <TextView
         android:id="@+id/txt_prvdres"
         android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="7dp"
-        android:gravity="center"
-        android:text="@string/txt_prvdres"
-        app:layout_constraintBottom_toTopOf="@+id/img_prvdres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img_clnte"
-        app:layout_constraintTop_toBottomOf="@+id/img_gsto" />
-
-    <ImageView
-        android:id="@+id/img_rprte"
-        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/img_rprtes_desc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_rprtes"
-        app:srcCompat="@drawable/prcpalreportes" />
-
-    <TextView
-        android:id="@+id/txt_rprtes"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="3dp"
         android:gravity="center"
-        android:text="@string/txt_rprtes"
-        app:layout_constraintBottom_toTopOf="@+id/img_rprte"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/txt_prvdres"
+        app:layout_constraintBottom_toTopOf="@+id/img_clnte"
+        app:layout_constraintEnd_toStartOf="@+id/txt_clntes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_prvdres" />
+        app:layout_constraintTop_toBottomOf="@+id/img_Invntro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
